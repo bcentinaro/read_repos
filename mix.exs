@@ -9,11 +9,11 @@ defmodule ReadRepos.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
+     deps: deps(),
 
      # Hex
-     description: description,
-     package: package]
+     description: description(),
+     package: package()]
   end
 
   defp description do
@@ -23,9 +23,9 @@ defmodule ReadRepos.Mixfile do
   end
 
   defp package do
-    [maintainers: ["Kenta Katsumata"],
+    [maintainers: ["Kenta Katsumata", "Bill Centinaro"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/kenta-aktsk/read_repos"},
+     links: %{"GitHub" => "https://github.com/bcentinaro/read_repos"},
      files: ~w(mix.exs README.md LICENSE lib)]
   end
 
