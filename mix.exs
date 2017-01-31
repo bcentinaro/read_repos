@@ -9,7 +9,7 @@ defmodule ReadRepos.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps, 
+     deps: deps,
 
      # Hex
      description: description,
@@ -37,6 +37,6 @@ defmodule ReadRepos.Mixfile do
   end
 
   defp deps do
-    [{:scrivener, "~> 1.0"}]
+    [{:scrivener, "~> 2.0"}]
   end
 end
